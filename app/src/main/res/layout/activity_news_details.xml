@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewsDetailsActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_theme_light_primary"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:title="News Details"
+        app:titleCentered="true"
+        app:titleTextColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Blog Title"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAuther"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:text="something about the blog"
+        android:textColor="@color/md_theme_light_primary"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Dear Profesional , you have a Physical Appointment with piyush jaiswal 2 on 23-12-2022 at 16:00:00 Please be Available.\n\nDear Profesional , you have a Physical Appointment with piyush jaiswal 2 on 23-12-2022 at 16:00:00 Please be Available.    \n\nDear Profesional , you have a Physical Appointment with piyush jaiswal 2 on 23-12-2022 at 16:00:00 Please be Available.        "
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+
+</LinearLayout>
