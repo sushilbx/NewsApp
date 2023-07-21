@@ -4,10 +4,15 @@ import com.newsapp.models.NewsModel;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Query;
 
 public interface Api {
 
-    @GET("v2/everything?q=tesla&from=2023-06-20&sortBy=publishedAt&apiKey=c0aac9e83e4f4f8cb0f4d7ad55fced7d")
+    @GET("v2/everything")
     Call<NewsModel> getNews(
+            @Query("q") String q,
+            @Query("from") String from,
+            @Query("sortBy") String sortBy,
+            @Query("apiKey") String apiKey
     );
 }
